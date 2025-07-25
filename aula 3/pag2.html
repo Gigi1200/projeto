@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3</title>
+</head>
+<body>
+    <header> <h1> Formulario </h1></header>
+    <nav>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="pag1.html">Pag1</a></li>
+    <li><a href="pag2.html">Pag2</a></li>
+
+    </nav>
+    <section>
+       <form action ="" method ="get" name="feira">
+            <fieldset>
+                <legend> dados pessoais:</legend>
+                <label for ="nome">Nome: </label>
+                <input type="text" name="txtNome" id="txtNome" size="100" requuired autofocus/>
+                <br/><br/>
+                <label for="dtNascimento">Data Nascimento:</label>
+                <input type="date" name="dtNascimento" id="dtNascimento" required/>
+                <br/><br/>
+                <label for="cpf">CPF:</label>
+                <input type ="text" name="txtCpf" id="txtCpf" size="15"disabled />
+                <br/><br/>
+                <label for="telConato">Contato:</label>
+                <input type ="tel" name="tlContato" id="tlContato" " required placeholder="preencha com DDD"/>
+                <br/><br/>
+                <label for="email">Email:</label>
+                <input type ="email" name="email" id="email" size="100" required/>
+                <br/><br/>
+            </fieldset>
+            <fieldset> 
+            <legend> Endereço:</legend>
+             <label for ="cep">Cep: </label>
+                <input type="text" name="txtCep" id="txtCep" size="9"/>
+                <br/><br/>
+            <label for ="logradouro">Lougradouro: </label>
+                <input type="text" name="txtLogradouro" id="txtLog" size="100"/>
+                <br/><br/>
+            <label for ="numero">Numero: </label>
+                <input type="text" name="txtNum" id="TxtNum" size='6' maxlength="6"/>
+                <br/><br/>
+            <label for ="complemento">Complemento: </label>
+                <input type="text" name="txtcomplemento" id="txtcomplemento" size="10" maxlength="10"/>
+                <br/><br/>
+            <label for ="cidade">Cidade: </label>
+                <input type="text" name="txtCidade" id="txtCidade" size="60" maxlength="60"/>
+                <br/><br/>
+            <label for ="Estado">Estado: </label>
+            <select>
+                <option value ="RJ"> RJ </option>
+                <option value ="SP"> SP </option>
+                <option value ="MG"> MG </option>
+                <option value ="ES"> ES </option>
+
+
+            </select>
+            </fieldset>
+            <fieldset>
+                <legend size="30">  Feira : </legend>
+                <label for ="Frutas">Frutas: </label>
+                <input list="comida" name="lsComida" id="lsComida"/>
+                <datalist id = "comida"> 
+                    <option value = "Pera"></option>
+                    <option value = "Maça"></option>
+                    <option value = "Laranja"></option>
+                    <option value = "Uva"></option>
+
+                </datalist>
+                <br/><br/>
+                <label for=" tempero"> Temperos:</label>
+                <select id="cbxTemp" name = "cbxTemp">
+                    <optgroup label = "especiarias"> 
+                        <option value = "Canela"> Canela</option>
+                        <option value = "Cravo"> Cravo</option>
+                        <option value = "Anis"> Anis</option>
+               </optgroup>
+                <optgroup label = "raiz"> 
+                      <option value = "Açafrao"> Açafrao</option>
+               </optgroup>
+               <optgroup label = "folha"> 
+                      <option value = "Salsa"> Salsa</option>
+                      <option value = "Coentro"> Coentro</option>
+                      <option value = "Oregano"> Oregano</option>
+
+
+
+
+                </select>
+
+
+
+
+                </fieldset>
+                <br/>
+                <input type="submit" value="Salvar">
+                <button type="button" onclick="alert('Voce clicou')">
+                    <img src = "img/cachorro.webp" width="40px" height="40px">
+                    <strong> Clique </strong>
+                </button>
+                </form>
+ </section>
+    <footer>
+        Site para fins educacionais
+    </footer>
+    
+</body>
+</html>
